@@ -1074,7 +1074,7 @@ fill: #f4f4fd ;
 
 .form {
     display: flex;
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
     align-content: center;
    justify-content: center;
    /* gap: 16px;*/
@@ -1145,10 +1145,6 @@ fill: #f4f4fd ;
     border: none; 
 }
 
-@media screen and (min-width: 1158px) 
-{
-  
-}
 
 .button-form-footer:hover {
     background-color: #2e2f42;
