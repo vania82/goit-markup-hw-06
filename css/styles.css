@@ -30,7 +30,7 @@ p {
 /*  Heder */
 
 .page-header {
-    display: flex;
+  
     border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -61,7 +61,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 56px;
+
    
 }
 /* Navigation */
@@ -74,13 +74,12 @@ p {
 @media screen and (min-width:768px){
  .navigation{
     justify-content: space-between ;
-    padding-top: 24px;
-    padding-bottom: 24px;
+   
 }
 
 @media screen and (min-width: 1158px) {
     .navigation {
-        padding: 16px;
+        
     }
 }
  }    
@@ -194,8 +193,7 @@ p {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    padding: 16px ;
-    margin-left: 122px;
+    margin-left: auto;
   }
 }
 
@@ -215,7 +213,6 @@ p {
     font-weight: 400;
     line-height: 1.16;
     letter-spacing: 0.02em;
-    padding: 24px 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
@@ -298,7 +295,7 @@ p {
 }
 
 .mobil-list {
-    padding-right: 153px;
+   
     margin-top: 72px;
 
 }
@@ -324,7 +321,7 @@ p {
 }
  /*Mobil-contacts*/
 .mobil-contacts {
-    margin-top: 168px;
+    margin-top: auto;
     margin-bottom: 48px;
 }
 
@@ -332,7 +329,6 @@ p {
 {   
     display: flex;
     flex-direction: column;
-    margin-bottom: 48px;
     gap: 24px;
     
 }
@@ -364,13 +360,17 @@ p {
    top: 2.25px;
     
 }
+@media screen and (min-width: 786px) {
+.menu-mobil {
+    display: none;
+}
+}
 /* Main */
 
 .section-main {
     background-color: #2e2f42;
-   max-width: 1440px;
-    height: 432px;
-    padding: 72px 52px 200px 52px;
+    max-width: 1440px;
+    padding: 72px 0;
     margin: 0 auto;
     text-align: center;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
@@ -394,8 +394,7 @@ p {
 @media screen and (min-width: 768px) {
     .section-main 
     {
-        height: 436px;
-        padding: 136px 112px 136px 204px;
+        padding: 112px 0;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
         url(../images/office-tab1x.jpg);
@@ -440,7 +439,7 @@ p {
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    max-width: 496px;
+    max-width: 216px;
     padding: 0;
     margin: 0 auto;
 
@@ -449,6 +448,7 @@ p {
   .title {
     font-size: 56px;
     line-height: 1.07;
+    max-width: 496px;
   }
 }
 
@@ -586,11 +586,15 @@ p {
     line-height: 1.1;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    display: block;
+    text-align: center;
 }
+@media screen and (min-width: 786px) {
+.little-title { 
+    text-align: left;
+   }
+}
+
 @media screen and (min-width: 1158px) {
    .little-title {
     font-size: 20px;
@@ -603,6 +607,7 @@ p {
 .text {
     color: var(--SLATE, #434455);
     font-family: "Roboto", sans-serif;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -640,7 +645,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     row-gap: 72px;
-
+    justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -865,16 +870,18 @@ p {
 }
 
 .container-footer {
- 
+    display: flex;
+    flex-direction: column;
+    gap: 72px;;
 
 }
 @media screen and (min-width: 768px) {
    .container-footer {
-        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
-        align-items: baseline;
-        justify-content: center;
-        width: 584px;
+       gap:72px 24px;
+       padding-left: 108px;
+      
 
     }
 }
@@ -950,7 +957,7 @@ p {
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
-    padding-top: 72px;
+   
 
 }
 @media screen and (min-width: 768px) {
@@ -998,7 +1005,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 72px;
+
   
   
 }
@@ -1041,7 +1048,6 @@ p {
     gap: 24px;
     flex-direction: row;
     align-items: end;
-     
     }
 }
 @media screen and (min-width: 1158px) {
