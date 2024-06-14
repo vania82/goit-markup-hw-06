@@ -889,7 +889,7 @@ p {
     .container-footer {
        flex-direction: row;
         flex-wrap: nowrap;
-        
+       justify-content: center; 
     }
 }
 .nav-footer {
