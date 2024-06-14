@@ -876,21 +876,23 @@ p {
 
 }
 @media screen and (min-width: 768px) {
-   .container-footer {
+  .container-footer {
+     width: 584px;
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-       gap:72px 24px;
-       padding-left: 108px;
-      
-
+        gap: 72px 24px;
+       
     }
 }
+
 @media screen and (min-width: 1158px) {
-    .container-footer {
-       flex-direction: row;
-        flex-wrap: nowrap;
-       justify-content: center; 
-    }
+  .container-footer {
+    justify-content: center;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: unset;
+   }
 }
 .nav-footer {
     
@@ -946,7 +948,13 @@ p {
     letter-spacing: 0.02em;
     width: 264px;
 }
-    
+ @media screen and (min-width: 1158px)   {
+
+ .social-media {
+    margin-right: 80px;
+}
+}
+
 .footer-social {
     display: flex;
     align-items: center;
@@ -963,6 +971,7 @@ p {
 @media screen and (min-width: 768px) {
     .footer-social {
       display: inline-block;
+     
     }
 }
 
@@ -1019,7 +1028,7 @@ p {
     .form-email {
         display: inline-block;
         flex-direction: row;
-        margin-left: 80px;
+    
       
     }
 }
