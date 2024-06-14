@@ -1051,12 +1051,11 @@ p {
     }
 }
 @media screen and (min-width: 1158px) {
-    .form  {
-      display: flex;
-      flex-wrap: nowrap;
-     justify-content: center;
-    
-          
+.form  {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+           
     }
 }
 
